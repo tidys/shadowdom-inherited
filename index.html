@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./icon.css" />
+  </head>
+
+  <body>
+    <i class="iconfont icon-folder"> </i>
+    <div class="shadow-host"></div>
+    <script>
+      const shadowHost = document.querySelector(".shadow-host");
+      const shadowRoot = shadowHost.attachShadow({ mode: "open" });
+
+      const el = document.createElement("i");
+      el.className = "iconfont icon-folder";
+      shadowRoot.appendChild(el);
+
+      const css = document.createElement("link");
+      css.rel = "stylesheet";
+      css.href = "./icon.css";
+      shadowRoot.appendChild(css);
+    </script>
+  </body>
+</html>

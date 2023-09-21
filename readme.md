@@ -1,0 +1,1 @@
+测试shadowdom对inherited的影响，结论是没影响。
